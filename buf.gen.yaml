@@ -1,0 +1,9 @@
+version: v2
+inputs:
+  - directory: third_party/mysql-x-proto
+plugins:
+  - local: protoc-gen-es
+    out: generated
+    opt:
+      - target=ts
+      - import_extension=.js

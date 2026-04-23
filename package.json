@@ -26,9 +26,15 @@
     "dev": "vp pack --watch",
     "test": "vp test",
     "check": "vp check",
-    "prepublishOnly": "vp run build"
+    "prepublishOnly": "vp run build",
+    "gen": "buf generate"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.11.0"
   },
   "devDependencies": {
+    "@bufbuild/buf": "^1.68.4",
+    "@bufbuild/protoc-gen-es": "^2.11.0",
     "@types/node": "^25.5.0",
     "@typescript/native-preview": "7.0.0-dev.20260328.1",
     "bumpp": "^11.0.1",
